@@ -10,12 +10,12 @@ const keys = require("./keys.js");
 
 // Initializes Spotify and Twitter node APIs
 const spotifyAPI = require('node-spotify-api');
-const twitterAPI = require('node-twitter-api');
+const twitterAPI = require('twitter');
 
 // Defines command so that I don't have to type process.argv[2] all day
 const command = process.argv[2];
 
-// Function for defining movie-this command
+// Function for defining 'movie-this' command
 const movieThis = (title='Mr. Nobody') => {
     const omdbApi = require("omdb-client");
     const params = {
@@ -33,7 +33,7 @@ const movieThis = (title='Mr. Nobody') => {
     });
 };
 
-// Function for defining spotify-this command
+// Function for defining 'spotify-this-song' command
 // Use format 'song, artist' to help find more specific tracks. If you pass just the song title the response will be top spotify track by that name.
 // If the artist is not on spotify then your response will not be what you expect. Example the band 'Tool'
 const spotifyThis = (song='The Sign, Ace of Base') => {
@@ -48,14 +48,17 @@ const spotifyThis = (song='The Sign, Ace of Base') => {
     });
 };
 
+// Function for defining 'my-tweets' command
 const myTweets = () => {
-    const twitter = new twitterAPI(keys.twitter);
-    twitter.statuses('show', {limit: 20}, process.env.TWITTER_ACCESS_TOKEN_KEY, process.env.TWITTER_ACCESS_TOKEN_SECRET, (err,data) => {
-        if (err) {
-            return console.log(err);
-        };
+    const client = new twitterAPI(keys.twitter);
+    var params = {screen_name: 'BiffMacaroni', count: 20};
+    client.get('statuses/user_timeline', params, function(error, tweets, response) {
+        if (!error) {
+            for (let i = 0; i < tweets.length; i++) {
+                console.log(`${tweets[i].text}\n====================`);
 
-        console.log(data);
+            };
+        };
     });
 };
 
