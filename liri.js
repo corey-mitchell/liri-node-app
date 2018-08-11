@@ -5,6 +5,8 @@ require("dotenv").config();
 const keys = require("./keys.js");
 // import {spotify} from "./keys.js";  <=== ES6 Version uses import, not currently supported by node. Just something I learned that I am leaving in the code for later use.
 
+const Spotify = require('node-spotify-api');
+
 // Other Var ***Need to set up***
 // let fs = require("fs");
 // let twitter = new Twitter(keys.twitter);
@@ -32,15 +34,15 @@ const movieThis = (title='Mr. Nobody') => {
 }
 
 // Function for defining spotify-this command
-const spotifyThis = (song='The Sign') => {
-    const Spotify = require('node-spotify-api');
+const spotifyThis = (song='The Sign, Ace of Base') => {
     const spotify = new Spotify(keys.spotify);
-    spotify.search({type: 'track', query: song}, (err,data) => {
+    spotify.search({type: 'track', query: song, limit: 5}, (err, data) => {
         if (err) {
             return console.log(err);
         };
-
-        console.log(data);
+        const songInfo = data.tracks.items[0];
+        // console.log(songInfo);
+        console.log(`Artist: ${songInfo.artists[0].name}\nSong: ${songInfo.name}\nLink to song: ${songInfo.external_urls.spotify}\nAlbum: ${songInfo.album.name}`);
     })
 };
 
