@@ -1,0 +1,79 @@
+User Command: node liri movie-this
+
+Title: Saving Private Ryan
+Year: 1998
+IMDb Rating: 8.6/10
+Country Created: USA
+Launguage: English, French, German, Czech
+Actors: Tom Hanks, Tom Sizemore, Edward Burns, Barry Pepper
+Plot: Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.
+
+
+User Command: node liri spotify-this-song
+
+Artist: Alice In Chains
+Song: Rooster
+Link to song: https://open.spotify.com/track/0wvIGFIgbyz4JNwQhZgTv2
+Album: Dirt
+
+User Command: node liri my-tweets
+
+Why do girls who do duck face get mad when I throw bread at them?
+===================================
+If you're not sure how to finger a girl, Google, "fat guy trying to get the last few pringles out of the can."
+===================================
+I'm a big ol' gay potatoe.
+===================================
+Inertia states that if you nut in space, it pushes you backwards.
+===================================
+People with glasses are just people without glasses with glasses.
+===================================
+I would sacrifice most of your lives for 1 more hour of sleep every morning.
+===================================
+Guys, feminism isn't hard. They just want you to quit refering to fat chicks as "practice girls."
+===================================
+Tfw you accidentally tell a pregnant woman that she "has really let herself go."
+===================================
+I'm getting "Drink Your Juice" in Mandarin tattooed on me.
+===================================
+Imma fast talkin, high trousers kinda guy.
+===================================
+Unpopular Opinion: Words CANNOT harm you.
+===================================
+I never pull apart string-cheese. I just bite into the stick like the degenerate that I am.
+===================================
+Lettuce on the minge
+===================================
+I don't like babies because they're competing with me for resources.
+===================================
+Starring special guest, Man Trapped in Trunk
+===================================
+First poop in my new apartment.
+
+Enjoy the little things.
+===================================
+G-When your friend
+A-says something
+Y-stupid
+===================================
+W.W.J.D.?
+
+A. N. A. L.
+===================================
+I bust a nut but keep watching porn for the plotline
+===================================
+Ok science dummies, if evolution were real then why do people still bite their lip while eating?
+
+Check and mate.
+===================================
+
+
+User Command: node liri do-what-it-says
+User Command: node liri spotify-this-song
+
+Artist: Backstreet Boys
+Song: I Want It That Way
+Link to song: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+
+
