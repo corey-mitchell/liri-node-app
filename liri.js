@@ -53,7 +53,7 @@ const movieThis = (title='Mr. Nobody') => {
 };
 
 // Function for defining 'spotify-this-song' command
-// Use format 'song, artist' to help find more specific tracks. If you pass just the song title the response will be top spotify track by that name.
+// Use format 'song, artist' to help find more specific tracks. If you pass just the song title, response will be first spotify track by that name.
 // If the artist is not on spotify then your response will not be what you expect. Example the band 'Tool'
 const spotifyThis = (song='The Sign, Ace of Base') => {
     // logs user command
@@ -170,7 +170,7 @@ else if(command === "my-tweets") {
 }
 
 // spotify-this-song command
-// Use format 'song, artist' to help find more specific tracks. If you pass just the song title the response will be top spotify track by that name.
+// Use format 'song, artist' to help find more specific tracks. If you pass just the song title, response will be first spotify track by that name.
 else if(command === "spotify-this-song") {
     spotifyThis(process.argv[3]);
 }
