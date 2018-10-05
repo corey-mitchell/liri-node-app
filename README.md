@@ -1,6 +1,6 @@
 # liri-node-app
 
-Siri-like command-line application which allows the user to; Search a song on spotify, check their last 20 tweets or find information on a movie all with simple commands.
+Siri-like command-line application which allows the user to; Search a song on spotify, check their last 20 tweets or find information on a movie, all with simple commands.
 
 ## Getting Started
 
