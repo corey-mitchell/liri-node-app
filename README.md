@@ -88,4 +88,4 @@ In this case, the command is 'spotify-this-song' and the specifics are 'Rooster 
 
 ## Author 
 
-* **Corey Mitchell** - *Initial work* - (https://github.com/corey-mitchell)
+* **Corey Mitchell** - (https://github.com/corey-mitchell)
